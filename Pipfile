@@ -8,6 +8,7 @@ pydantic = "*"
 pylint = "*"
 fastapi = "*"
 starlette = "*"
+odmantic = "*"
 
 [dev-packages]
 

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Finish homework for Pexon",
+        "priority": 1
+    },
+    {
+        "id": 2,
+        "title": "Check homework for Pexon",
+        "priority": 2
+    },
+    {
+        "id": 3,
+        "title": "Wtite unit test for homework",
+        "priority": 3
+    },
+    {
+        "id": 4,
+        "title": "push homework to repository",
+        "priority": 4
+    },
+    {
+        "id": 5,
+        "title": "Create Dockerfile for homework",
+        "priority": 5
+    }
+]

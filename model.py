@@ -1,4 +1,5 @@
-from pydantic import BaseModel, Schema
+from pydantic import BaseModel, Field
 
 class TodoItem(BaseModel):
-    title: str = Schema(..., description='Name of todo item', max_length=180)
+    title: str = Field(..., description='Name of todo item', max_length=180)
+    id: int

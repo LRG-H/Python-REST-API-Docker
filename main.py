@@ -44,8 +44,8 @@ async def update_todo(todo_id: int, todo: TodoItem, q: Optional[str] = None):
     return result
 
 @app.delete('/todos/{id}', tags=['todos'], response_model=TodoItem)
-async def delete_todo(todo_id: int, response_model=TodoItem)
-    todo = await engine.find_one(TodoItem, TodoItem.id == id)
+async def delete_todo(todo_id: int, response_model=TodoItem):
+    todo = await TODOS.find_one(TodoItem, TodoItem.id == id)
     if todo is None:
         raise HTTPException(404)
     await engine.delete(todo)

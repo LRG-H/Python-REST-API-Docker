@@ -3,12 +3,15 @@ from typing import List, Optional
 
 from fastapi import FastAPI, Query, Path, HTTPException
 from starlette.responses import JSONResponse
+from odmantic import AIOEngine, Model, ObjectId
 
 from model import TodoItem
 
 app = FastAPI()
 with open('todos.json') as f:
     TODOS = json.load(f)
+
+engine = AIOEngine()
 
 @app.exception_handler(Exception)
 async def error_handler(request, exc):
@@ -45,5 +48,5 @@ async def delete_todo(todo_id: int, response_model=TodoItem):
     todo = await TODOS.find_one(TodoItem, TodoItem.id == id)
     if todo is None:
         raise HTTPException(404)
-    await TODOS.delete(todo)
+    await engine.delete(todo)
     return todo

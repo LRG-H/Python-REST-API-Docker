@@ -1,3 +1,3 @@
 Homework for Pexon:
 
-Python RESTAPI with included Dickerfile
+Python RESTAPI with included Dockerfile

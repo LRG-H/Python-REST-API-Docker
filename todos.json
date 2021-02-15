@@ -11,12 +11,12 @@
     },
     {
         "id": 3,
-        "title": "White unit test for homework",
+        "title": "Write unit test for homework",
         "priority": 3
     },
     {
         "id": 4,
-        "title": "push homework to repository",
+        "title": "Push homework to repository",
         "priority": 4
     },
     {
